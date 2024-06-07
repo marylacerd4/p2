@@ -56,4 +56,3 @@ setInterval(atualizaCronômetro,1000);
 }
 
 comecaCronômetro();
-
