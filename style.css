@@ -1,128 +1,128 @@
-@importar url(' https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap' );
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
 
-:raiz {
---cor-de-fundo: #1E1E1E;
---verde: #6FFF57;
---branco: #FFFFFF;
---botao-ativo: #3A375E;
---botao-inativo: rgba(58, 55, 94, 0,5);
---texto-fundo: rgba(58, 55, 94, 0,3);
+:root {
+    --cor-de-fundo: #1E1E1E;
+    --verde: #6FFF57;
+    --branco: #FFFFFF;
+    --botao-ativo: #3A375E;
+    --botao-inativo: rgba(58, 55, 94, 0.5);
+    --texto-fundo: rgba(58, 55, 94, 0.3);
 }
 
-corpo {
-cor de fundo: var(--cor-de-fundo);
-cor: var(--branco);
-família de fontes: 'Chakra Petch', sem serifa;
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco);
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 
 .conteudo-principal {
-exibição: flexível;
-direção flexível: coluna;
-justificar-conteúdo: centro;
-alinhar itens: centro;
-largura máxima: 1200px;
-largura: 100%;
-margem: 0 automático;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .titulo-principal {
-alinhamento de texto: esquerda;
-largura: 100%;
-tamanho da fonte: 32px;
+    text-align: left;
+    width: 100%;
+    font-size: 32px;
 }
 
 .titulo-principal span {
-cor: var(--verde);
+    color: var(--verde);
 }
 
 
-.botão {
-família de fontes: 'Chakra Petch', sem serifa;
-cor de fundo: var(--botao-inativo);
-cor: var(--branco);
-exibição: flexível;
-justificar-conteúdo: centro;
-preenchimento: 1em;
-tamanho da fonte: 18px;
-alinhar itens: centro;
-largura: 100%;
-border-bottom: 4px sólido var(--botao-ativo);
-borda esquerda: 2px sólido var(--botao-ativo);
-borda direita: 2px var sólido(--botao-ativo);
-borda superior: nenhuma;
+.botao {
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: var(--botao-inativo);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 2px solid var(--botao-ativo);
+    border-right: 2px solid var(--botao-ativo);
+    border-top: none;
 }
 
-.botao:primeiro-filho {
-raio da borda: 40px 40px 0 0;
+.botao:first-child {
+    border-radius: 40px 40px 0 0;
 }
 
 .botoes {
-exibição: bloco;
+    display: block;
 }
 
 .botao.ativo{
-cor de fundo: var(--botao-ativo);
-borda inferior: 4px var sólido (--verde);
+    background-color: var(--botao-ativo);
+    border-bottom: 4px solid var(--verde);
 }
 
 .abas-textos{
-cor de fundo: var(--texto-fundo);
-preenchimento: 40px;
-raio da borda: 0 0 40px 40px;
+    background-color: var(--texto-fundo);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
 }
 .aba-conteudo.ativo{
-exibição: bloco;
+    display:block;
 }
 
 .aba-conteudo{
-Mostrar nenhum;
+    display: none;
 }
 
 .aba-conteudo-titulo-principal{
-tamanho da fonte: 28px;
-alinhamento de texto: centro;
+    font-size: 28px;
+    text-align: center;
 }
-.aba-conteudo-título-secundario{
-alinhamento de texto: centro;
-cor: var(--verde);
-transformação de texto: maiúscula;
+.aba-conteudo-titulo-secundario{
+    text-align: center;
+    color: var(--verde);
+    text-transform: uppercase;
 }
 
 .contador{
-exibição:flexível;
-justificar-conteúdo: centro;
-flex-wrap: envoltório;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .contador-digito{
-preenchimento: 0 16px;
-alinhamento de texto: centro;
-largura mínima: 100px;
+    padding: 0 16px;
+    text-align: center;
+    min-width: 100px;
 }
 
-.contador-dígito-número{
-tamanho da fonte: 80px;
-margem: 0;
+.contador-digito-numero{
+    font-size: 80px;
+    margin: 0;
 
 }
 
 .contador-digito-texto{
-cor: var(--verde);
-tamanho da fonte: 20px;
-margem: 0;
+    color: var(--verde);
+    font-size: 20px;
+    margin: 0;
 
 }
 
-@media screen e (largura mínima: 768px) {
-.botoes {
-exibição: flexível;
-}
+@media screen and (min-width: 768px) {
+    .botoes {
+        display: flex;
+    }
 
-.botao:primeiro-filho {
-raio da borda: 40px 0 0 0;
-}
+    .botao:first-child {
+        border-radius: 40px 0 0 0;
+    }
 
-.botao:último-filho {
-raio da borda: 0 40px 0 0;
-}
+    .botao:last-child {
+        border-radius: 0 40px 0 0;
+    }
 }

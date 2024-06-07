@@ -36,7 +36,7 @@ minutos %= 60;
 horas %= 24;
 if (tempoFinal > 0){
 return [dias,horas,minutos,segundos];
-} outro {
+} else {
 retornar [0,0,0,0];
 }
 }
